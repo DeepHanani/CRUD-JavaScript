@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <label>firstname:</label>
+    <input type="text" id="item"><br><br>
+
+    <label>lastname  :</label>
+    <input type="text" id="lastname"><br><br>
+
+
+    <label>adress :</label>
+    <textarea rows="4" cols="50" id="adresss"></textarea><br><br>
+    
+    <input type="hidden" id="index" value="-1"/>
+    
+    <input type="button" value="save" onclick="saveitem()">
+
+    <!-- <div id="display"></div> -->
+    <table style="width:50%" class="items" id="main">
+
+        <thead>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>adress</th>
+          <th>edit</th>
+          <th>delete</th>
+        </thead>
+        
+        <tbody id="display">
+  
+  
+        </tbody>
+  
+        
+         
+        </table>
+    
+    
+
+    <script src="form.js"></script>
+</body>
+</html>
